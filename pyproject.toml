@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python-base"
+version = "0.1.0"
+description = ""
+authors = ["lucas.felicio <lucas.felicio@credisis.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+ipython = "^8.16.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
