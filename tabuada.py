@@ -4,13 +4,13 @@
 __version__ = "0.1.0"
 __author__ = "Lucas Felício"
 
-#numeros = [1,2,3,4,5,6,7,8,9,10]
-
+# Interable (percorrivel)
 numeros = list(range(1,11))
 
-# Interable (percorrivel)
-for numero in numeros:
-    print("Tabuada do: ", numero)
-    for numero_multiplicado in numeros:
-        print(numero * numero_multiplicado)
-    print('------------')
+for n1 in numeros: 
+    print("{:-^18}".format(f"Taboada do {n1}"))
+    print()
+    for n2 in numeros:
+        resultado = n1 * n2
+        print("{:^18}".format(f"{n1} x {n2} = {resultado}"))
+    print("#" * 18)
