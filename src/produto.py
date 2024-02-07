@@ -16,8 +16,19 @@ produto = {
     "codebar": None
 }
 
-compra = ("Lucas", produto["nome"], 4)
+cliente = {
+    "nome": "Lucas"
+}
 
-total_compra = compra[2] * produto["preco"]
+compra = {
+    "cliente": cliente,
+    "produto": produto,
+    "quantidade": 4
+}
 
-print(f"O cliente {compra[0]} comprou {compra[2]} {compra[1]} e pagou um total de R$ {total_compra}")
+total_compra = compra['quantidade'] * produto["preco"]
+
+print(
+    f"O cliente {compra['cliente']['nome']} "  
+    f"comprou {compra['quantidade']} {compra['produto']['nome']} "
+    f"e pagou um total de R$ {total_compra}")
